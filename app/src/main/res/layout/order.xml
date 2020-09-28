@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_lite"
+    tools:context=".activity.CartListActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/MyCart"
+        app:titleTextColor="@color/white"
+        android:background="?attr/colorPrimary"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ToolbarTheme">
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/myorderslinearFilter"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/rectangle_shape"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/_10sdp">
+                <TextView
+                    android:id="@+id/txt_items"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="items 3"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="left"/>
+                <TextView
+                    android:id="@+id/txt_Filtersmyorder"
+                    android:layout_weight="0.8"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filters"
+                    android:drawableLeft="@drawable/ic_filter"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_order"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="items 3"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_date"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filters"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="right"/>
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="0.8"
+                android:layout_below="@+id/myorderslinearFilter"
+                android:layout_above="@+id/linear_cart_bottom"
+                android:id="@+id/recyclerView_myorders"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_4sdp"
+                tools:ignore="MissingConstraints"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/linear_cart_bottom"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/text_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/_18ssp"
+                    android:textColor="@color/black"
+                    android:text="Item: 5 Qty: 2 Total: \u20B9 250" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/error_layout"/>
+    </FrameLayout>
+</LinearLayout>

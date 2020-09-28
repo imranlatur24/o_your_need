@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <com.oyourneed.view.MyTextView
+                android:id="@+id/otpTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_below="@+id/img_Logo"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_20ssp"
+                android:text="@string/otp_verification"/>
+
+        </RelativeLayout>
+
+        <com.oyourneed.view.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/verify_your_otp"/>
+
+        <com.oyourneed.view.MyEditText
+            android:id="@+id/edtOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:background="@drawable/round_corner"/>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lytNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <com.oyourneed.view.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/new_password"/>
+
+            <com.oyourneed.view.MyEditText
+                android:id="@+id/newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:drawableLeft="@drawable/ic_password"
+                android:background="@drawable/round_corner"/>
+
+            <com.oyourneed.view.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/confirm_password"/>
+
+            <com.oyourneed.view.MyEditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:drawableLeft="@drawable/ic_password"
+                android:background="@drawable/round_corner"/>
+
+        </LinearLayout>
+
+        <com.oyourneed.view.MyButton
+            android:id="@+id/btnOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/verify_your_otp"
+            android:background="@drawable/round_corner_purple" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorGery"/>
+
+        <com.oyourneed.view.MyTextView
+            android:id="@+id/txtResendOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/resend_otp"/>
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>
+</ScrollView>

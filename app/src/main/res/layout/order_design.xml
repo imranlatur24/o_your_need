@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="@dimen/_2sdp"
+            app:cardElevation="@dimen/_2ssp"
+            app:cardPreventCornerOverlap="true"
+            app:cardMaxElevation="@dimen/_3ssp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:text=" Delivery by Your Need"
+                    android:textSize="@dimen/_12sdp"/>
+                <TextView
+                    android:layout_weight="0.6"
+                    android:id="@+id/textView_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="date "
+                    android:gravity="right"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@color/black"/>
+            <TextView
+                android:id="@+id/textView_Orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Id : 1010001201"
+                android:textSize="@dimen/_13sdp"
+                android:paddingLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_2sdp" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.4"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Charges"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_weight="0.6"
+                    android:text="₹ 50"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:textSize="@dimen/_13sdp"/>
+                <TextView
+                    android:id="@+id/textView_prize"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="PKR df234"
+                    android:textSize="@dimen/_13sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <View
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Status : Inprocess"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:paddingLeft="@dimen/_50sdp"/>
+                    <TextView
+                        android:id="@+id/textView_prize2"
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Payable Amount :-"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:paddingLeft="@dimen/_50sdp" />
+
+                </LinearLayout>
+                <Button
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:id="@+id/btn_viewdeatils"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_34sdp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="@string/viewdetails"
+                    android:background="@color/orange"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>

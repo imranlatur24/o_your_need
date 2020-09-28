@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_6sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:id="@+id/image_cancel_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_cancel"
+            android:contentDescription="@string/app_name"/>
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_below="@+id/img_Logo"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_20ssp"
+                android:text="Forgot Password"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:paddingTop="2dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:textSize="@dimen/_20ssp"
+            android:paddingRight="16dp"
+            android:textColor="@color/white"
+            android:text="@string/choose_payment_type"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/cod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:onClick="cod"
+                    android:text="@string/cashon"
+                    android:textSize="@dimen/_16sdp" />
+
+                <RadioButton
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:onClick="online"
+                    android:id="@+id/online"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paytm_card" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCanecl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_29sdp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="@dimen/_18sdp"
+            android:background="@color/orange" />
+
+        <!--      <View
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/_2sdp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginBottom="4dp"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginRight="16dp"
+                  android:background="@color/colorGery"/>
+
+              <com.grocery.view.MyTextView
+                  android:id="@+id/txtLoginGoBack"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingTop="4dp"
+                  android:paddingBottom="16dp"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:text="@string/mobile"/>-->
+
+    </LinearLayout>
+</android.support.design.card.MaterialCardView>

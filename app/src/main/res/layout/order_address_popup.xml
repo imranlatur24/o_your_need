@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_below="@+id/img_Logo"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_20ssp"
+                android:text="Forgot Password"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/name"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/mobileno"/>
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:inputType="number"
+            android:maxLength="10"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/address"/>
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorGery"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <Button
+               android:layout_weight="0.5"
+               android:id="@+id/btnProcess"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_40sdp"
+               android:layout_marginTop="@dimen/_26sdp"
+               android:layout_marginBottom="@dimen/_16sdp"
+               android:layout_marginLeft="@dimen/_16sdp"
+               android:layout_marginRight="@dimen/_16sdp"
+               android:textColor="@color/colorWhite"
+               android:textAllCaps="false"
+               android:text="@string/process"
+               android:textSize="@dimen/_14sdp"
+               android:background="@drawable/round_corner_purple" />
+           <Button
+               android:layout_weight="0.5"
+               android:id="@+id/btnCancel"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_40sdp"
+               android:layout_marginTop="@dimen/_26sdp"
+               android:layout_marginBottom="@dimen/_16sdp"
+               android:layout_marginLeft="@dimen/_16sdp"
+               android:layout_marginRight="@dimen/_16sdp"
+               android:textColor="@color/white"
+               android:textAllCaps="false"
+               android:text="@string/cancel"
+               android:textSize="@dimen/_14sdp"
+               android:background="@color/colorOrange" />
+
+       </LinearLayout>
+        <!--      <View
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/_2sdp"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginBottom="4dp"
+                  android:layout_marginLeft="16dp"
+                  android:layout_marginRight="16dp"
+                  android:background="@color/colorGery"/>
+
+              <com.grocery.view.MyTextView
+                  android:id="@+id/txtLoginGoBack"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingTop="4dp"
+                  android:paddingBottom="16dp"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:text="@string/mobile"/>-->
+
+    </LinearLayout>
+</android.support.design.card.MaterialCardView>

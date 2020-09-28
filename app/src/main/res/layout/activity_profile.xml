@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".activity.ProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:title="Profile"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.FeedbackActivity"
+        tools:showIn="@layout/activity_feedback">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo"
+                    android:id="@+id/profile_image"/>
+
+            </FrameLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/profileCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_Logo"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/first_name"
+                        android:textColor="@color/orange" />
+
+                    <EditText
+                        android:id="@+id/txt_FirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/black"
+                        android:paddingTop="4dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="4dp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/last_name"
+                        android:textColor="@color/orange" />
+
+                    <EditText
+                        android:id="@+id/txt_LastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="4dp"
+                        android:textColor="@color/black"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="4dp" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/email"
+                        android:textColor="@color/orange" />
+
+                    <EditText
+                        android:id="@+id/txt_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/black"
+                        android:paddingBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/mobile"
+                        android:textColor="@color/orange" />
+
+                    <EditText
+                        android:id="@+id/txt_Mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:maxLength="10"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/DOB"
+                        android:textColor="@color/orange" />
+
+
+                    <EditText
+                        android:id="@+id/txt_DOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="4dp"
+                        android:hint="@string/DOB"
+                        android:textColor="@color/black"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/country"
+                            android:textColor="@color/orange" />
+
+                        <com.oyourneed.view.TextInputAutoCompleteTextView
+                            android:id="@+id/textinput_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="textCapWords"
+                            android:textColor="@color/black"
+                            android:hint="@string/country"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/state"
+                            android:textColor="@color/orange" />
+
+                        <com.oyourneed.view.TextInputAutoCompleteTextView
+                            android:id="@+id/textinput_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="textCapWords"
+                            android:paddingLeft="16dp"
+                            android:hint="@string/state"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/black"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/city"
+                            android:textColor="@color/orange" />
+
+                        <com.oyourneed.view.TextInputAutoCompleteTextView
+                            android:id="@+id/textinput_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="textCapWords"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="16dp"
+                            android:hint="@string/city"
+                            android:textColor="@color/black"
+                            android:paddingBottom="4dp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/address"
+                            android:textColor="@color/orange" />
+
+                        <EditText
+                            android:id="@+id/txt_Address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|left"
+                            android:inputType="textCapWords|textMultiLine"
+                            android:lines="10"
+                            android:textColor="@color/black"
+                            android:padding="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/pincode"
+                            android:textColor="@color/orange" />
+
+                        <EditText
+                            android:id="@+id/txt_Pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:maxLength="6"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="4dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:text="@string/update_profile"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
